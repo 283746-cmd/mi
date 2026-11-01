@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: xiaomi-cs-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: FRONTEND_ORIGIN
+        value: "https://你的前端地址.vercel.app"
